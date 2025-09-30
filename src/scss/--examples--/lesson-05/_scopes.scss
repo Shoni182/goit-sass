@@ -2,11 +2,16 @@ $color-primary: teal; // global scope
 
 body {
   $color-primary: lightblue; // local scope
-  $color-secondary: white !global;
+  $color-secondary: white !global; // тут вже доступна глобально
   background-color: $color-primary;
 }
 
 p {
-  color: $color-secondary; // undefined
+  color: $color-secondary; // undefined  нема такої змінної
+  // тому потрібно ологолиси !global в іншому селекторі (баді)
   background-color: $color-primary;
 }
+
+//? якщо змінна оголошується в локально то вона не -
+//? буде видна поза дужки щоб її було видно з іншого селектора
+//? робимо її глобальною

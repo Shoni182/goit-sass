@@ -1,8 +1,9 @@
 @use "sass:math";
 @use "btn-scema" as vars with (
+  //; тут потрібно вписати default в btn-scema файлі sass
   $font-size: 10px,
   $btn-color: black,
-  $btn-bgcolor: lightblue
+  $btn-bgcolor: lightblue // це все додаткові які можуть замінити головний
 );
 
 .small-btn {
