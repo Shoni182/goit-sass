@@ -1,35 +1,48 @@
-@charset "UTF-8";
-/*  Отримуємо значення з мапи */
+/* @use "utilities";
+@use "base";
+@use "layout";
+@use "components"; */
+/* == End == */
+.title {
+  font-size: 16px;
+}
+
+.subtitle {
+  font-size: 10px;
+}
+
+/* == End == */
 body {
-  background-color: #e9e9e9;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
 }
 
-/*
-   Перевикористовуємо мапу кольорів
-   для стилізації кнопки
-*/
-.button {
-  color: #8e3329;
-  background-color: #e9e9e9;
+.small-btn {
+  font-size: 10px;
+  color: black;
+  background-color: lightblue;
 }
 
-/* Генеруємо набір класів повідомлень */
-.alert-primary {
-  background-color: #f07f2e;
+body {
+  background-color: lightblue;
 }
 
-.alert-success {
-  background-color: #82c43c;
+p {
+  color: white;
+  background-color: teal;
 }
 
-.alert-danger {
-  background-color: #fc5a5a;
-}
-
-.alert-warning {
-  background-color: #a461d8;
-}
-
-.alert-info {
-  background-color: #4e75ff;
-}
+/* @use "--examples--/lesson-14/map";
+@use "--examples--/lesson-14/alerts"; */
